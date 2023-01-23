@@ -1,0 +1,165 @@
+html,body {
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+font-family:'Roboto Mono',monospace;
+background-color: #2B1608;
+margin:0
+}
+
+::selection {
+background-color:#815328;
+}
+
+.unselectable {
+-webkit-touch-callout:none;
+-webkit-user-select:none;
+-khtml-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+user-select:none
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.container {
+display:flex;
+flex-direction:row;
+justify-content:space-between
+}
+
+p {
+font-family:sans-serif;
+font-size:1.1em
+}
+
+body hr {
+width:80vw;
+align-self:center
+}
+
+section {
+  width:70vw;
+  background-color: #FFEEEA;
+  align-self: center;
+  padding: 0 5rem;
+}
+section .container {
+margin: 3rem 0;
+}
+
+nav {
+display:flex;
+justify-content:center;
+position:fixed;
+top:0;
+width:100%;
+z-index:100;
+color:#000;
+opacity: 1;
+transition: opacity 4s;
+}
+nav.hide {
+opacity: 0;
+}
+
+nav .container {
+display:flex;
+flex-direction:row;
+width:50vw;
+justify-content:space-between;
+margin:1em
+}
+
+nav .container span {
+font-weight:700
+}
+
+nav .container div a {
+color:#000;
+transition-duration:500ms;
+padding:.5em
+}
+
+nav .container div a:hover {
+text-decoration:none;
+font-size:1.05em;
+font-weight:700;
+padding:.35em
+}
+
+header {
+height:calc(100%);
+min-height:calc(100%);
+display:flex;
+justify-content:center;
+background:linear-gradient(rgba(0,0,0,0.1),rgba(43,22,8,0.5)),url(img/self-1.JPG);
+background-size:cover;
+background-position:center
+}
+
+header .container {
+padding-top:20rem;
+margin:0;
+width:100vw;
+color:#fff;
+display:flex;
+justify-content:center;
+text-align:center
+}
+
+#header-container-text {
+margin-top:5em
+}
+
+#header-container-text h2 {
+font-family:'Roboto Mono',monospace
+}
+
+#header-container-text hr {
+width:20vw;
+background-color:#fff
+}
+
+#about-me .container {
+top: 0;
+left: 0;
+flex-direction:column
+}
+#about-me .container h2 {
+margin-top:1rem;
+}
+#about-me hr {
+width:20vw;
+margin: 1em 0;
+align-self: flex-start;
+}
+#about-me .row {
+  justify-content: space-between;
+}
+
+#view-portfolio {
+  background-color: #4D270E;
+  text-align: center;
+  padding: 2.5rem;
+}
+
+#view-portfolio a {
+  background-color: #815328;
+  color: white;
+}
+
+#gallery .container {
+  padding: 0 5rem;
+}
+
+footer {
+padding:2rem;
+background-color:#110702;
+color:#fff;
+text-align:center;
+vertical-align:middle
+}
