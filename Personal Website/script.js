@@ -7,12 +7,13 @@ var scrollNav = $(".scroll-navbar");
 function updateNav(scrollpos) {
   console.log(scrollpos);
   if(scrollpos < 100) {
-    scrollNav.attr("display", 'none');
-  } else if(scrollpos >= 100 && scrollpos <= 800) {
-    scrollNav.attr("display", 'flex');
-    scrollNav.attr("opacity", scrollpos/1000);
-  } else if(scrollpos > 800) {
-    scrollNav.attr("display", 'none');
+    scrollNav.removeClass("showNav").addClass("hideNav");
+  } else if((scrollpos >= 100 && scrollpos <= 800) && scrollNav.hasClass("index")) {
+    scrollNav.removeClass("hideNav").addClass("showNav");
+    scrollNav.css("opacity", scrollpos/1000);
+  } else {
+    scrollNav.removeClass("hideNav").addClass("showNav");
+    scrollNav.css("opacity", 1);
   }
 }
 
