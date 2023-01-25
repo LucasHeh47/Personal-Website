@@ -47,49 +47,25 @@
       </div>
     </nav>
 
-    <hr>
-
-    <section id="about-me" class="about-me-page">
+    <section id="contact">
       <div class="container">
-        <div class="row">
-          <div class="col-4" id="about-me-img">
-            <img src="img/self-2-brown.png" id="shadow-color-img-hoverchange" class="img-fluid" alt="">
+        <h2>Contact</h2>
+        <hr>
+        <form>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
           </div>
-          <div class="col-8" id="about-me-text">
-            <h2>About</h2>
-            <p>My name is Lucas and I am a 17-year-old high school student with a passion for web design and development. I am set to graduate in June 2023 and am eager to start freelancing and creating websites for clients.
-
-I have a strong understanding of HTML, CSS, JS, and JQuery and am also skilled in programming languages such as Python, C++, C#, and Java. In addition, I have experience in game development using Unity and have a basic understanding of SQL and working with databases through Python and SQL.
-
-I am excited to start a career as a software engineer and bring my skills and creativity to the industry. I am available for freelancing projects and would love to help bring your website or web-related projects to life.</p>
-            <a class="btn" href="portfolio.html">View Portfolio</a>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" class="form-control" id="subject" required>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <hr>
-
-    <section id="skills">
-      <div class="container">
-        <div class="row">
-          <div class="col-12" id="skills-text">
-            <h2>Skills</h2>
-            <hr>
-              <ul>
-                <li> Proficient in web development languages and frameworks such as HTML, CSS, JavaScript, JQuery and other Front-end technologies.</li>
-                <li> Skilled in programming languages such as Python, C++, C# and Java.</li>
-                <li> Experience in game development using Unity.</li>
-                <li> Basic understanding of SQL and working with databases through Python and SQL.</li>
-                <li> Strong understanding of responsive design.</li>
-                <li> Basic understanding of Git and version control.</li>
-                <li> Strong problem solving and debugging skills.</li>
-                <li> Strong attention to detail and ability to deliver high-quality work.</li>
-                <li> Strong communication and teamwork skills</li>
-                <li> Self-motivated and eager to learn new technologies and tools.</li>
-              </ul>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="6" required></textarea>
           </div>
-        </div>
+          <button type="submit" class="btn">Send</button>
+        </form>
       </div>
     </section>
 
