@@ -32,6 +32,33 @@ font-family:sans-serif;
 font-size:1.1em
 }
 
+.half-rect-border {
+  border-left: solid 2px #815328;
+  position: relative;
+  border-right: solid 2px #815328;
+  position: relative;
+  padding: 1em;
+  margin-top: 1em;
+}
+.half-rect-border::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 37.5%;
+    height: 2px;
+    background-color: #815328;
+}
+.half-rect-border::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    width: 37.5%;
+    height: 2px;
+    background-color: #815328;
+}
+
 body hr {
 width:80vw;
 align-self:center
@@ -201,32 +228,6 @@ align-items: center;
   justify-content: center;
   padding-left: 0;
 }
-.about-me-page #about-me-text p {
-  border-left: solid 2px #815328;
-  position: relative;
-  border-right: solid 2px #815328;
-  position: relative;
-  padding: 1em;
-  margin-top: 1em;
-}
-.about-me-page #about-me-text p::before {
-    content: "";
-    position: absolute;
-    top: -1px;
-    left: -1px;
-    width: 37.5%;
-    height: 2px;
-    background-color: #815328;
-}
-.about-me-page #about-me-text p::after {
-    content: "";
-    position: absolute;
-    bottom: -1px;
-    right: -1px;
-    width: 37.5%;
-    height: 2px;
-    background-color: #815328;
-}
 
 .about-me-page h2 {
   margin: 0 auto;
@@ -283,8 +284,12 @@ flex-direction: column;
 #skills ul {
   padding: 0;
 }
+#skills ul ul {
+  padding-left: 1em;
+}
 #skills li {
   list-style: none;
+  padding-top: 1em;
 }
 #skills li::before {
   content: "\00BB";
@@ -340,4 +345,21 @@ background-color:#110702;
 color:#fff;
 text-align:center;
 vertical-align:middle
+}
+
+footer .container {
+  justify-content: center;
+}
+footer .container a {
+  color: white;
+}
+footer .container i {
+  padding: 0.5em;
+  margin: 0.25em;
+  font-size: 2em;
+  transition-duration: 500ms;
+}
+footer .container i:hover {
+  font-size: 2.1em;
+  margin: 0;
 }

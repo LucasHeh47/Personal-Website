@@ -28,3 +28,17 @@ document.addEventListener("scroll", (event) => {
     ticking = true;
   }
 });
+
+//  Contact page
+
+$(document).ready(function() {
+  var subject = $("#contact-subject");
+  var body = $("#contact-body");
+  var submit = $("#contact-submit");
+  submit.click(function(){
+      window.open('mailto:darthmonkey10@gmail.com?subject=' +
+      encodeURIComponent(subject.val()) +
+      '&body=' +
+      encodeURIComponent(body.val()));
+  });
+});
