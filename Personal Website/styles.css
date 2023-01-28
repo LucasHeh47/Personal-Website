@@ -79,6 +79,18 @@ section .container {
 margin: 3rem 0;
 }
 
+.dropdown-toggle::after {
+  display: none;
+}
+
+nav .dropdown-toggle {
+  color: #806449;
+  background-color: #110702;
+}
+nav .dropdown-menu {
+  left: -4em !important;
+}
+
 .top-navbar {
 display: flex;
 justify-content: center;

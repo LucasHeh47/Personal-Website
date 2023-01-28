@@ -7,11 +7,14 @@ var scrollNav = $(".scroll-navbar");
 function updateNav(scrollpos) {
   console.log(scrollpos);
   if(scrollpos < 100) {
+    console.log("<100");
     scrollNav.removeClass("showNav").addClass("hideNav");
   } else if((scrollpos >= 100 && scrollpos <= 800) && scrollNav.hasClass("index")) {
+    console.log("index");
     scrollNav.removeClass("hideNav").addClass("showNav");
     scrollNav.css("opacity", scrollpos/1000);
   } else {
+    console.log("else");
     scrollNav.removeClass("hideNav").addClass("showNav");
     scrollNav.css("opacity", 1);
   }
@@ -23,6 +26,7 @@ document.addEventListener("scroll", (event) => {
   if(!ticking) {
     window.requestAnimationFrame(() => {
       updateNav(lastScrollPos);
+      $('.show').removeClass('show');
       ticking = false;
     });
     ticking = true;
