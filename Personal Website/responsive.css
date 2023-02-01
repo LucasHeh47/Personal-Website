@@ -68,6 +68,7 @@
     padding: 0;
   }
   .about-me-page .row {
+    display: flex;
   }
   .about-me-page .col-8 {
     padding: 0;
