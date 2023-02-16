@@ -40,7 +40,7 @@
           <span class="unselectable">|</span>
           <a href="contact.html">Contact</a>
           <span class="unselectable">|</span>
-          <a href="#">Portfolio</a>
+          <a href="portfolio.html">Portfolio</a>
         </div>
       </div>
     </nav>
@@ -64,68 +64,62 @@
           <span class="unselectable">|</span>
           <a href="about-me.html">About Me</a>
           <span class="unselectable">|</span>
-          <a href="#">Contact</a>
+          <a href="contact.html">Contact</a>
           <span class="unselectable">|</span>
-          <a href="#">Portfolio</a>
+          <a href="portfolio.html">Portfolio</a>
         </div>
       </div>
     </nav>
 
-    <hr>
+    <section id="portfolio">
+      <div class="accordion" id="se23">
+        <div class="se23-item">
+          <h2 class="se23-header" id="se23-heading">
+            <button class="accordion-button btn" type="button" data-toggle="collapse" data-target="#se23-collapse" aria-expanded="true" aria-controls="se23-collapse">
+              Science Expo 2023 - Sorting Algorithms (Not Finished)
+            </button>
+          </h2>
+          <div id="se23-collapse" class="accordion-collapse collapse" aria-labelledby="se23-heading" data-parent="#se23">
+            <div class="accordion-body">
+              <div class="container">
+                <p>Project for a Science Expo in 2023, partnered with a great friend of mine Mathew Teem, we had a project where we wrote a program to gather data on different sorting algorithms. Our goal of this project was to find out what Sorting algorithm was best for what scenario when sorting large integer lists. To do this we created 4 different types of lists of a size of 100,000 items.</p>
+                <ul>
+                  <li>Random Lists</li>
+                  <li>Nearly Sorted Lists</li>
+                  <li>Few Unique Items Lists</li>
+                  <li>Reversed Lists</li>
+                </ul>
+                <p>We then wrote sorting algorithm functions that would take in an integer lists, convert it to an array and, sort the array. The sorting algorithms we used for this project were:</p>
+                <ul>
+                  <li>Bubble</li>
+                  <li>Selection</li>
+                  <li>Insertion</li>
+                  <li>Shell</li>
+                  <li>Merge</li>
+                  <li>Heap</li>
+                </ul>
+                <p>We then would time how long it took to sort the array by using high_resolution_clock from the C++ standard library and input the time in milliseconds into tables. We ran the test 3 times for each algorithm in each scenario and got the averages.</p>
 
-    <section id="about-me" class="about-me-page">
-      <div class="container">
-        <div class="row">
-          <div class="col-4" id="about-me-img">
-            <img src="img/self-2-brown.png" id="shadow-color-img-hoverchange" class="img-fluid" alt="">
-          </div>
-          <div class="col-8" id="about-me-text">
-            <h2>About</h2>
-            <p class="half-rect-border">My name is Lucas and I am a 17-year-old high school student with a passion for web design and development. I am set to graduate in June 2023 and am eager to start freelancing and creating websites for clients.
+                <div id="se23-slideshow" class="desktop-view" style="position: relative; padding-bottom: 75%; height: 0; overflow: hidden;">
+                  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vROtdEh5sj4NHRhWCNPILNnQSpMZzDevXvTDOfUK11vy2lbseWxvO1EIv-Yl4C06R3ci3GnfMBRR27V/embed?start=false&loop=false&delayms=3000" frameborder="0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                </div>
 
-I have a strong understanding of HTML, CSS, JS, and JQuery and am also skilled in programming languages such as Python, C++, C#, and Java. In addition, I have experience in game development using Unity and have a basic understanding of SQL and working with databases through Python and SQL.
+              </div>
 
-I am excited to start a career as a software engineer and bring my skills and creativity to the industry. I am available for freelancing projects and would love to help bring your website or web-related projects to life.</p>
-            <a class="btn" href="portfolio.html">View Portfolio</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr>
-
-    <section id="skills">
-      <div class="container">
-        <div class="row">
-          <div class="col-12" id="skills-text">
-            <h2>Skills</h2>
-            <hr>
-              <ul>
-                <li> Proficient in web development languages and frameworks such as HTML, CSS, JavaScript, JQuery and Bootstrap.</li>
-                <li> Skilled in programming languages such as Python, C++, C# and Java.</li>
-                <li> Experience in game development using Unity and PyGame.</li>
-                <li> Basic understanding of SQL and working with databases through Python and SQL.</li>
-                <li> Strong understanding of responsive design.</li>
-                <li> Basic understanding of Git and version control.</li>
-                <li> Strong problem solving and debugging skills.</li>
-                <li> Strong attention to detail and ability to deliver high-quality work.</li>
-                <li> Strong communication and teamwork skills</li>
-                <li> Self-motivated and eager to learn new technologies and tools.</li>
-                <li> Basic knowledge of popular networking protocols such as FTP, HTTP, and HTTPS, including understanding of the request-response model and use of common HTTP methods (GET, POST, etc.)</li>
-              </ul>
+              <a href="https://docs.google.com/presentation/d/1v45UaohW824kPB5k_A_VQu_0UU6utNS0V0JPcKXotaw/edit?usp=sharing" class="btn mobile-view">Presentation</a>
+              <a href="https://github.com/LucasHeh47/ScienceExpo22Algorithms" class="btn">Source Code</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
-    <hr>
 
     <footer>
 
       <div class="container">
         <div class="row">
           <a href="https://www.instagram.com/lucasheh.png/"><i class="fa-brands fa-instagram"></i></a>
-          <a href="mailto:darthmonkey10@email.com"><i class="fa-regular fa-envelope"></i></a>
+          <a href="mailto:lucas.johnson.062005@email.com"><i class="fa-regular fa-envelope"></i></a>
         </div>
       </div>
       &copy; Lucas Johnson
