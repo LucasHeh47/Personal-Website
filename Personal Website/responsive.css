@@ -94,6 +94,22 @@
     align-self: center;
   }
 
+  #portfolio-se23 h2 {
+    font-size: 1.4rem;
+  }
+  #portfolio-se23 p {
+    font-size: 0.8rem;
+  }
+  #portfolio-se23 ul {
+    font-size: 0.8rem;
+  }
+
+
+  iframe {
+      width: 100%;
+      height: auto;
+    }
+
   footer {
      padding: 0.25em;
   }
