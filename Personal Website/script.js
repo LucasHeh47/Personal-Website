@@ -26,7 +26,7 @@ document.addEventListener("scroll", (event) => {
   if(!ticking) {
     window.requestAnimationFrame(() => {
       updateNav(lastScrollPos);
-      $('.show').removeClass('show');
+      if(!$('.show').hasClass("accordion-collapse"))$('.show').removeClass('show');
       ticking = false;
     });
     ticking = true;

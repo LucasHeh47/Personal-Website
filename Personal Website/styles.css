@@ -351,6 +351,45 @@ transition-duration: 500ms;
 background-color: #815328;
 }
 
+#portfolio {
+  color: white;
+}
+#portfolio .accordion-button {
+  background-color: #644117;
+  color: white;
+  width: 100%;
+}
+#se23 {
+  margin: 1rem 0;
+  width: 75%;
+}
+#se23 .accordion-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#se23-collapse .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+#se23-collapse a {
+margin-top: 1em;
+background-color: #644117;
+color: white;
+width: 12em;
+padding: 1em;
+border: 3px solid #4D270E;
+transition-duration: 500ms;
+align-self: center;
+text-align: center;
+display: block !important;
+}
+#se23-collapse a:hover {
+background-color: #815328;
+}
+
 footer {
 padding:3rem;
 background-color:#110702;
