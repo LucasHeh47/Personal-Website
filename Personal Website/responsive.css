@@ -94,6 +94,21 @@
     align-self: center;
   }
 
+  #portfolio button {
+    white-space: normal !important;
+  }
+  #portfolio p {
+    font-size: 0.8rem;
+  }
+  #portfolio ul {
+    font-size: 0.8rem;
+  }
+
+  iframe {
+      width: 100%;
+      height: auto;
+    }
+
   footer {
      padding: 0.25em;
   }
@@ -136,6 +151,9 @@
 
   #gallery .container{
     padding: 0;
+  }
+  #portfolio button {
+    white-space: normal !important;
   }
 }
 @media only screen and (min-width: 780px) and (max-width: 1200px) {

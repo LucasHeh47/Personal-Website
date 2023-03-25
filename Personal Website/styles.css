@@ -351,6 +351,49 @@ transition-duration: 500ms;
 background-color: #815328;
 }
 
+
+#portfolio .accordion button {
+background-color: #644117;
+color: white;
+padding: 0.5em;
+margin: 1em;
+border: 3px solid #4D270E;
+align-self: center;
+transition-duration: 500ms;
+}
+#portfolio .accordion button:hover {
+background-color: #815328;
+}
+#portfolio .accordion-body .container {
+flex-direction:column;
+width: 75%;
+color: white;
+}
+#portfolio .accordion-body .container h2 {
+margin-top:1rem;
+}
+#portfolio .accordion-body hr {
+width:10em;
+background-color: white;
+margin: 1em 0;
+align-self: flex-start;
+}
+#portfolio .accordion-body .row {
+  margin-bottom: 1em;
+}
+#portfolio .accordion-body a {
+background-color: #644117;
+color: white;
+width: 12em;
+padding: 0.5em;
+border: 3px solid #4D270E;
+align-self: center;
+transition-duration: 500ms;
+}
+#portfolio .accordion-body a:hover {
+background-color: #815328;
+}
+
 footer {
 padding:3rem;
 background-color:#110702;
