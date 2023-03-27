@@ -8,6 +8,13 @@ background-color: #1a0e05;
 margin:0
 }
 
+.hide {
+  display: none !important;
+}
+.show {
+  display: inline-block !important;
+}
+
 .unselectable {
 -webkit-touch-callout:none;
 -webkit-user-select:none;
@@ -57,6 +64,14 @@ font-size:1.1em
     width: 37.5%;
     height: 2px;
     background-color: #815328;
+}
+
+#invisible-send-btn-text {
+  display: None;
+}
+
+.alert-hide {
+  display: none;
 }
 
 body hr {
