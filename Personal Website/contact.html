@@ -75,17 +75,29 @@
       <div class="container">
         <h2>Contact</h2>
         <hr>
-        <form>
+        <form id="contact-form" method="post">
           <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" class="form-control" id="contact-subject" required>
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="contact-name" name="name" required>
           </div>
           <div class="form-group">
-            <label for="message">Message</label>
-            <textarea class="form-control" id="contact-body" rows="6" required></textarea>
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="contact-email" name="email" required>
+          </div>
+          <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="contact-body" name="message" rows="6" required></textarea>
           </div>
           <button type="submit" id="contact-submit" class="btn">Send</button>
-        </form>
+
+          <div class="alert alert-success alert-hide" role="alert">
+              Message Sent!
+          </div>
+          <div class="alert alert-danger alert-hide" role="alert">
+              Message was unable to be sent!
+          </div>
+      </form>
+
       </div>
     </section>
 
@@ -112,6 +124,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <script src="script.js"></script>
+    <script src="sendmail.js"></script>
 
   </body>
 </html>

@@ -59,6 +59,10 @@ font-size:1.1em
     background-color: #815328;
 }
 
+.alert-hide {
+  display: none;
+}
+
 body hr {
 width:80vw;
 align-self:center
