@@ -9,12 +9,12 @@
 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="responsive.css">
-
     <style>
       /* 'Roboto Mono', monospace; */
       @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
     </style>
+    
 
   </head>
   <body>
@@ -92,12 +92,16 @@
             <span id="visible-send-btn-text">Send</span>
             <span id="invisible-send-btn-text">Sending...</span>
           </button>
+          
 
-          <div class="alert alert-success alert-hide" role="alert">
+          <div id="contact-form-response-success" class="alert alert-success alert-hide" role="alert">
               Message Sent!
           </div>
-          <div class="alert alert-danger alert-hide" role="alert">
+          <div id="contact-form-response-error" class="alert alert-danger alert-hide" role="alert">
               Message was unable to be sent!
+          </div>
+          <div id="contact-form-response-invalid-characters" class="alert alert-warning alert-hide" role="alert">
+              Invalid Characters!
           </div>
       </form>
 
@@ -128,6 +132,8 @@
 
     <script src="script.js"></script>
     <script src="sendmail.js"></script>
+
+    
 
   </body>
 </html>

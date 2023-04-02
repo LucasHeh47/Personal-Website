@@ -6,8 +6,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
     $email = $_POST["email"];
     $message = $_POST["message"];
+    $pattern = "/[()<>%$#!*\"'\\/\\[\\]^&*+=-]/";
 
-    // Replace this with your email address
     $to = "lucas.johnson.062005@gmail.com";
     $subject = "New Contact Form Submission";
     $headers = "From: " . $email . "\r\n" .
@@ -17,7 +17,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_body = "Name: " . $name . "\n" .
                   "Email: " . $email . "\n" .
                   "Message: " . $message;
-    if (mail($to, $subject, $email_body, $headers)) {
+    if(strstr($name, '\\') !== false || strstr($name, '\\' !== false)) {
+        echo "invalid";
+    } else if(preg_match($pattern, $name)){
+        echo "invalid";
+    } else if (mail($to, $subject, $email_body, $headers)) {
         echo "success";
     } else {
         echo "error";
