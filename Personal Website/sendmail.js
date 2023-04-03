@@ -20,17 +20,21 @@ $(document).ready(function() {
          $("#visible-send-btn-text").removeClass("hide");
          $("#invisible-send-btn-text").removeClass("show");
          if (response === "success") {
-           $(".alert-success").removeClass("alert-hide").fadeIn().delay(10000).fadeOut(function() {
+           $("#contact-form-response-success").removeClass("alert-hide").fadeIn().delay(10000).fadeOut(function() {
             $(this).addClass("alert-hide");
           });
-         } else {
-           $(".alert-danger").removeClass("alert-hide").fadeIn().delay(10000).fadeOut(function() {
+         } else if (response === "error") {
+           $("#contact-form-response-error").removeClass("alert-hide").fadeIn().delay(10000).fadeOut(function() {
             $(this).addClass("alert-hide");
           });
+         } else if (response === "invalid") {
+            $("#contact-form-response-invalid-characters").removeClass("alert-hide").fadeIn().delay(10000).fadeOut(function() {
+              $(this).addClass("alert-hide");
+            });
          }
        },
        error: function() {
-         $(".alert-danger").removeClass("alert-hide").fadeIn().delay(10000).fadeOut(function() {
+         $("#contact-form-response-error").removeClass("alert-hide").fadeIn().delay(10000).fadeOut(function() {
             $(this).addClass("alert-hide");
           });
        }
