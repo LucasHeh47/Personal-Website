@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="responsive.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <style>
       /* 'Roboto Mono', monospace; */
       @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
@@ -88,6 +89,9 @@
               <label for="message">Message</label>
               <textarea class="form-control" id="contact-body" name="message" rows="6" required></textarea>
           </div>
+
+          <div class="g-recaptcha" data-sitekey="6LcrMVclAAAAAFMeuptVIsv21LKlzdOx3zWXRA7J"></div>
+
           <button type="submit" id="contact-submit" class="btn">
             <span id="visible-send-btn-text">Send</span>
             <span id="invisible-send-btn-text">Sending...</span>
@@ -102,6 +106,9 @@
           </div>
           <div id="contact-form-response-invalid-characters" class="alert alert-warning alert-hide" role="alert">
               Invalid Characters!
+          </div>
+          <div id="contact-form-response-recaptcha-failed" class="alert alert-warning alert-hide" role="alert">
+              reCAPTCHA validation failed. Please try again.
           </div>
       </form>
 

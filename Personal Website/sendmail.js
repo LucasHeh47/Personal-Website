@@ -31,6 +31,10 @@ $(document).ready(function() {
             $("#contact-form-response-invalid-characters").removeClass("alert-hide").fadeIn().delay(10000).fadeOut(function() {
               $(this).addClass("alert-hide");
             });
+         } else if (response === "recaptcha_error") {
+          $("#contact-form-response-recaptcha-failed").removeClass("alert-hide").fadeIn().delay(10000).fadeOut(function() {
+            $(this).addClass("alert-hide");
+          });
          }
        },
        error: function() {
