@@ -91,7 +91,7 @@
           <div class="col-6" id="about-me-text">
             <h2>About</h2>
             <hr>
-            <p>Meet Lucas, a 17-year-old high school student with a passion for web design and development. Graduating in June 2023, Lucas is eager to start freelancing and creating websites for clients. Along with a strong understanding of HTML, CSS, JS and JQuery, Lucas is also skilled in programming languages such as Python, C++, C#, and Java. In addition, Lucas has experience in game development using Unity and has a basic understanding of SQL and working with databases through Python and SQL. As Lucas looks to start a career as a software engineer, he is excited to bring his skills and creativity to the industry.</p>
+            <p>Meet Lucas, a talented 17-year-old high school student set to graduate in June 2023. With a strong passion for technology and programming, Lucas is excited to embark on a freelancing journey. Offering expertise in both front-end and back-end web development using HTML, CSS, JS, and PHP, Lucas can help bring your projects to life. In addition to web development, Lucas has experience creating 2D game engines in Java and Python using Pygame and has developed games in Unity. Proficient in electronics, Lucas is also skilled in working with Arduino projects. As a motivated and adaptable individual, Lucas is always eager to learn new technologies and expand his skillset to better serve his clients.</p>
             <a class="btn" href="portfolio.html">View Portfolio</a>
           </div>
           <div class="col-5">
@@ -180,6 +180,31 @@
       &copy; Lucas Johnson
 
     </footer>
+
+    <!-- Add this Bootstrap modal inside the <body> tag -->
+    <div class="modal fade" id="pageNotFoundModal" tabindex="-1" role="dialog" aria-labelledby="404ModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="404ModalLabel">Page Not Found</h5>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.location.hash === "#404") {
+          // Display the Bootstrap modal
+          $("#pageNotFoundModal").modal("show");
+        }
+      });
+    </script>
+
+    </script>
 
     <script src="https://kit.fontawesome.com/d28b7c066a.js" crossorigin="anonymous"></script>
 

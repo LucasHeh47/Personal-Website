@@ -467,3 +467,23 @@ footer .container i:hover {
   font-size: 2.1em;
   margin: 0;
 }
+
+
+/* 404 File not found Modal */
+#pageNotFoundModal {
+  top: 30% !important;
+}
+#pageNotFoundModal .modal-content {
+  text-align: center;
+}
+#pageNotFoundModal .modal-footer, #pageNotFoundModal .modal-header {
+  display: inline-block !important;
+}
+#pageNotFoundModal .modal-content button {
+  background-color: #644117;
+  color: white;
+  width: 12em;
+  padding: 1em;
+  border: 3px solid #4D270E;
+  transition-duration: 500ms;
+}
