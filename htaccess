@@ -1,0 +1,13 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://lucas-j.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://lucas-j.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.lucas-j.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.lucas-j.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://lucas-j.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://lucas-j.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.lucas-j.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.lucas-j.com$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp|JPG)$ https://lucas-j.com [R,NC]
+
