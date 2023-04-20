@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Lucas Johnson</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <style>
+      /* 'Roboto Mono', monospace; */
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+    </style>
+
+  </head>
+  <body>
+
+    <nav class="top-navbar">
+      <div class="container">
+        <span>Lucas Johnson</span>
+        <div class="dropdown navbar-menu">
+          <a role="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="index.html">Home</a></li>
+            <li><a class="dropdown-item" href="about-me.html">About Me</a></li>
+            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+            <li><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
+          </ul>
+        </div>
+        <div class="unselectable navbar-links">
+          <a href="index.html">Home</a>
+          <span class="unselectable">|</span>
+          <a href="about-me.html">About Me</a>
+          <span class="unselectable">|</span>
+          <a href="contact.html">Contact</a>
+          <span class="unselectable">|</span>
+          <a href="portfolio.html">Portfolio</a>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="scroll-navbar">
+      <div class="container">
+        <span>Lucas Johnson</span>
+        <div class="dropdown navbar-menu">
+          <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="index.html">Home</a></li>
+            <li><a class="dropdown-item" href="about-me.html">About Me</a></li>
+            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+            <li><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
+          </ul>
+        </div>
+        <div class="unselectable navbar-links">
+          <a href="index.html">Home</a>
+          <span class="unselectable">|</span>
+          <a href="about-me.html">About Me</a>
+          <span class="unselectable">|</span>
+          <a href="contact.html">Contact</a>
+          <span class="unselectable">|</span>
+          <a href="portfolio.html">Portfolio</a>
+        </div>
+      </div>
+    </nav>
+
+    <section id="portfolio">
+      <a href="https://github.com/LucasHeh47">GitHub</a>
+      <div class="accordion" id="se23">
+        <div class="se23-item">
+          <h2 class="se23-header" id="se23-heading">
+            <button class="accordion-button btn" type="button" data-toggle="collapse" data-target="#se23-collapse" aria-expanded="false" aria-controls="se23-collapse">
+              Science Expo 2023 - Sorting Algorithms
+            </button>
+          </h2>
+          <div id="se23-collapse" class="accordion-collapse collapse" aria-labelledby="se23-heading" data-parent="#se23">
+            <div class="accordion-body">
+              <div class="container">
+                <p>Project for a Science Expo in 2023, partnered with a great friend of mine Mathew Teem, we had a project where we wrote a program to gather data on different sorting algorithms. Our goal of this project was to find out what Sorting algorithm was best for what scenario when sorting large integer lists. To do this we created 4 different types of lists of a size of 100,000 items.</p>
+                <ul>
+                  <li>Random Lists</li>
+                  <li>Nearly Sorted Lists</li>
+                  <li>Few Unique Items Lists</li>
+                  <li>Reversed Lists</li>
+                </ul>
+                <p>We then wrote sorting algorithm functions that would take in an integer lists, convert it to an array and, sort the array. The sorting algorithms we used for this project were:</p>
+                <ul>
+                  <li>Bubble</li>
+                  <li>Selection</li>
+                  <li>Insertion</li>
+                  <li>Shell</li>
+                  <li>Merge</li>
+                  <li>Heap</li>
+                </ul>
+                <p>We then would time how long it took to sort the array by using high_resolution_clock from the C++ standard library and input the time in milliseconds into tables. We ran the test 3 times for each algorithm in each scenario and got the averages.</p>
+
+                <div id="se23-slideshow" class="desktop-view" style="position: relative; padding-bottom: 75%; height: 0; overflow: hidden;">
+                  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vROtdEh5sj4NHRhWCNPILNnQSpMZzDevXvTDOfUK11vy2lbseWxvO1EIv-Yl4C06R3ci3GnfMBRR27V/embed?start=false&loop=false&delayms=3000" frameborder="0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                </div>
+
+              </div>
+
+              <a href="https://docs.google.com/presentation/d/1v45UaohW824kPB5k_A_VQu_0UU6utNS0V0JPcKXotaw/edit?usp=sharing" class="btn mobile-view">Presentation</a>
+              <a href="https://github.com/LucasHeh47/ScienceExpo22Algorithms" class="btn">Source Code</a>
+            </div>
+          </div>
+        </div>
+      <div class="accordion" id="j2dg">
+          <div class="j2dg-item">
+            <h2 class="j2dg-header" id="j2dg-heading">
+              <button class="accordion-button btn" type="button" data-toggle="collapse" data-target="#j2dg-collapse" aria-expanded="false" aria-controls="j2dg-collapse">
+                Java 2D Top Down Game
+              </button>
+            </h2>
+            <div id="j2dg-collapse" class="accordion-collapse collapse" aria-labelledby="j2dg-heading" data-parent="#j2dg">
+              <div class="accordion-body">
+                <div class="container">
+
+                  <p>I wanted to learn how games randomly generate Terrain, such as Minecraft's terrain generation for an example. I then found Noise algorithms such as perlin and simplex. Although Graphic Design and Art isn't my specialty, I decided to create a Java Frame, add a player and a camera and apply movement and went on to learn how terrain is generated with noise.</p>
+
+                  <img src="img/j2dg_ss.png" alt="" class="img-fluid">
+                </div>
+
+                <a href="https://github.com/LucasHeh47/GameLib" class="btn">Source Code</a>
+                <a href="downloads\Java2DTopDownNoiseTestGame.zip" download class="btn">Download</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+
+      <div class="container">
+        <div class="row">
+          <a href="https://www.instagram.com/lucasheh.png/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="mailto:lucas.johnson.062005@email.com"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+      </div>
+      &copy; Lucas Johnson
+
+    </footer>
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4808805805265147"
+     crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/d28b7c066a.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,186 @@
+@media only screen and (max-width: 770px) {
+  /* Mobile */
+
+  .desktop-view {
+    display: none;
+  }
+  .mobile-view {
+    display: flex;
+  }
+
+  section {
+    padding: 0 2rem;
+  }
+
+  .scroll-navbar .dropdown-menu {
+    left: -2em !important;
+  }
+
+  nav .navbar-menu {
+    display: inline-block;
+  }
+  nav .navbar-links {
+    display: none;
+  }
+
+  .scroll-navbar .container {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .scroll-navbar .container div a {
+    color: #4D270E;
+  }
+
+  #header-container-text h1 {
+    font-size: 2rem;
+  }
+  #header-container-text h2 {
+    font-size: 1.5rem;
+  }
+  #header-container-text hr {
+    width: 10em;
+  }
+
+  #about-me .container .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  #about-me .container h2 {
+    font-size: 1.5rem;
+  }
+  #about-me p {
+    font-size: 0.75em;
+  }
+  #about-me hr {
+    width: 10em;
+  }
+
+  #gallery .container{
+    padding: 0;
+  }
+
+  /* About me page */
+  .about-me-page h2 {
+    font-size: 2rem;
+  }
+  .about-me-page .container {
+    padding: 0;
+  }
+  .about-me-page .row {
+    display: flex;
+  }
+  .about-me-page .col-8 {
+    padding: 0;
+    width: 100%;
+  }
+  #about-me-img {
+    display: none;
+  }
+
+  #skills ul {
+    font-size: 0.75em;
+  }
+
+  /* Contact page */
+  #contact .container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  #contact hr {
+    align-self: center;
+  }
+
+  #portfolio button {
+    white-space: normal !important;
+  }
+  #portfolio p {
+    font-size: 0.8rem;
+  }
+  #portfolio ul {
+    font-size: 0.8rem;
+  }
+
+  iframe {
+      width: 100%;
+      height: auto;
+    }
+
+  footer {
+     padding: 0.25em;
+  }
+}
+@media only screen and (min-width: 420px) and (max-width: 1200px) {
+  /* Tablet */
+
+  .desktop-view {
+    display: none;
+  }
+  .mobile-view {
+    display: flex;
+  }
+  nav .navbar-links {
+    display: none;
+  }
+  nav .navbar-menu {
+    display: flex;
+  }
+
+  #about-me .container .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  #about-me .container h2 {
+    font-size: 2rem;
+  }
+  #about-me p {
+    font-size: 1em;
+  }
+  #about-me hr {
+    width: 10em;
+  }
+  #about-me a {
+    margin-top: 2em;
+  }
+  #about-me-img {
+    display: none;
+  }
+
+  #gallery .container{
+    padding: 0;
+  }
+  #portfolio button {
+    white-space: normal !important;
+  }
+}
+@media only screen and (min-width: 780px) and (max-width: 1200px) {
+  nav .navbar-links {
+    display: flex;
+  }
+  nav .navbar-menu {
+    display: none;
+  }
+  #about-me-img {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /* Desktop */
+
+  .desktop-view {
+    display: flex;
+  }
+  .mobile-view {
+    display: none;
+  }
+
+  nav .navbar-menu {
+    display: none;
+  }
+  nav .navbar-links {
+    display: inline-block;
+  }
+}
