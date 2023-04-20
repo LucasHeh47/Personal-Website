@@ -180,7 +180,7 @@ height:calc(100vh - 0.5rem - 1em);
 min-height:calc(100vh - 0.5rem - 1em);
 display:flex;
 justify-content:center;
-background:linear-gradient(rgba(0,0,0,0.1),rgba(43,22,8,0.75)),url(img/self-19.png);
+background:linear-gradient(rgba(0,0,0,0.1),rgba(43,22,8,0.75)),url(img/self-19.jpg);
 background-size:cover;
 background-position:center
 }
